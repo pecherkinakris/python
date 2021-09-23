@@ -1,0 +1,3 @@
+eto stroka_1
+a eto stroka_2
+a eto echo stroka_3

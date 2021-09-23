@@ -1,0 +1,11 @@
+
+with open('myfileN3.txt') as f :
+    sal = []
+    poor = []
+    my_list = f.read().split('\n')
+    for i in f:
+        i = i.split()
+        if int(i[1]) < 20000:
+           poor.append(i[0])
+        sal.append(i[1])
+print(f'Оклад меньше 20.000 у {poor}, средний оклад {sum(map(int, sal)) / len(sal)}')
